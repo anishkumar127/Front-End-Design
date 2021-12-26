@@ -1,0 +1,413 @@
+Q2. What are the features of HTML?
+Ans. The following are the features of HTML: 
+
+It is a markup language that provides flexibility to design web pages with text.
+It is easy to use and learn. 
+HTML is platform-independent and can be used on Windows, Linux, and Macintosh, etc.
+It enables programmers to add images, video, and audio to a web page to make it more interactive.
+HTML allows programmers to add a link on the web pages, helping the readers to browse the information of their interest.
+It is case-insensitive. You can use tags either in lower-case or upper-case.
+Q3. What is the difference between HTML elements and tags?
+Ans. The differences between HTML elements and tags are: 
+
+HTML Elements	Tags
+1. The element is an individual component of the HTML web page or document that consists of a start tag, its attributes, an end tag, and everything in between. 	1. HTML tag (either opening or closing) is used to mark the start or end of an element.
+2. They usually consist of a start tag, content, and an end tag.	2. They begin with < symbol and end with > symbol. Whatever is written inside < and > are called tags.
+3. HTML Elements hold the content.	 3. HTML Tags hold the HTML element.
+4. They specify the general content.	4. HTML tags are like keywords. Each tag has a unique meaning.
+5. For example, <p>This is an example of a paragraph.</p>	5. For example, <a> is an opening anchor tag and </a> is a closing anchor tag.
+Q4. Do all HTML tags have an end tag?
+Ans. No, all HTML tags do not have an end tag. For example, <br> tag is used to break the line, <image> tag is used to insert an image into a document. They are considered as self-closing tags and do not require an end tag. 
+
+If you are a beginner and want to learn HTML or if you are a professional who wants to upskill to get ahead in your career, then check out the popular HTML courses here.
+
+Q5. Which HTML tags are used while displaying the data in the tabular form?
+Ans. The following HTML tags are used to display the data in the tabular form: 
+
+1	<table> 	Defines a table.
+2	<tr> 	Defines a row in a table.
+3	<th> 	It defines a header cell in a table.
+4	<td> 	Defines a cell in a table.
+5	<caption> 	This tag defines the table caption.
+6	<colgroup> 	This tag specifies a group of one or more columns in a table for formatting.
+7	<col> 	It is used with <colgroup> element to specify column properties for each column.
+8	<tbody> 	This tag groups the body content in a table.
+9	<thead> 	It groups the header content in a table.
+10	<tfooter> 	It groups the footer content in a table.
+Q6. Write the basic structure of the HTML template.
+Ans. The basic structure of the HTML template is:
+
+<html>
+
+      <head>
+
+                <title>Title of the page</title>
+
+      </head>
+
+      <body>content of the page</body>
+
+</html>
+
+Also Read: 100+ Java Interview Questions and Answers
+
+Q7. What is HTML5? What are some of its new features that were not present in HTML.
+Ans. HTML5 is the latest version of the Hypertext Markup Language. Some of the new features of HTML5 are:
+
+HTML5 supports SVG, canvas, and other virtual vector graphics. In HTML, vector graphics could only be used in conjunction with Flash, VML (Vector Markup Language), or Silverlight. 
+HTML5 allows JavaScript to run within a web browser. In the previous version, JavaScript was allowed to run in the browser interface thread.
+HTML5 is not based on SGML. It comes with enhanced parsing rules for improved compatibility.
+In HTML5, web SQL databases are used to store data temporarily. Previously, only browser cache was used.
+Some elements have been removed – applet, isindex, noframes, acronym, dir, font, frame, frameset, and big are removed. 
+New elements have been added – time, summary, aside, audio, command, and data.
+Q8. What are the most commonly used lists that are used while designing a page?
+Ans. The following are the most commonly used lists that are used while designing a page:
+
+unordered list (<ul> tag) – displays elements in a bulleted format.
+ordered list (<ol> tag) – displays elements in a numbered format.
+definition list (<dl>, <dt> and <dd> tags) – displays elements in definition form like in a dictionary.
+Also Read: Top JavaScript Interview Questions and Answers
+
+Q9. What are HTML Attributes?
+Ans. HTML attributes provide additional information about HTML elements. They are defined directly after the tag name. They only appear in opening tags and not in closing tags. 
+
+HTML attributes usually consist of name/value pairs like name=”value”. The Attribute values should always be enclosed in quotation marks. The name parameter takes the name of the property that is to be assigned to the element. The value takes the property value or extent of the property names that can be aligned over the element. 
+
+Some commonly used HTML attributes include src Attribute, alt Attribute, id Attribute, and href Attribute. 
+
+Q10. What is semantic HTML?
+Ans. Semantic HTML is a coding style. It is the use of HTML markup to reinforce the semantics, or meaning of the content in webpages and web applications rather than just defining its look or appearance. It introduces meaning to the code we write.
+
+For example: <form>, <table>, and <article> these tags clearly defines its content.
+
+Also Read: Web Developer Interview Questions and Answers 
+
+Q11. What is the HTML article element?
+Ans. The HTML <article> Element specifies independent and self-contained content in a document, page, application, or site, which is independently distributable or reusable. Since it is independent of the document or website, hence, it can be viewed, reused, and distributed separately. 
+
+For example, syndication. The HTML article element is used in: 
+
+Forum post
+Blog post
+Newspaper article
+Q12. Explain the layout of HTML.
+Ans. HTML layout represents how all the elements in the document are arranged. It is a vital part of basic page design and is important for creating a website so that the website can appear professional and attractive. Every website has a specific layout to display content in a specific manner. The following HTML elements are used to define the different parts of a webpage:
+
+<header>: define a header for a document or a section.
+<nav>: defines a container for navigation links
+<section>: it defines a section in a document
+<article>: define an independent, self-contained article
+<aside>: it defines content aside from the content
+<footer>: define a footer for a document or a section
+<details>: define additional details
+Q13. What is the difference between a block-level element and an inline element?
+Ans. The differences between block-level elements and inline elements are: 
+
+Block-level Elements	Inline Elements
+They start on a new line.	Do not start on a new line and can begin within a line.
+Stretch to fill the full width available to them.	Take up as much width as necessary. Its width only extends as far as it is defined by its tags.
+They have a top and a bottom margin.	Inline elements do not have a top and a bottom margin. 
+Examples of block-level elements in HTML: <div>, <img>, <form>, <main>, <table>, <video>.	Examples of inline elements: <span>, <img>, <strong>, <code>, <input>, <time>, <i>.
+Check out the Top 10 Most-Popular Programming Languages to Learn
+
+Q14. How to insert an image in HTML?
+Ans. Images can be inserted in an HTML page by using the <img> tags. It is an empty tag that has only attributes and it does not require a closing tag. The <img> tag must be used inside <body>…</body> tag. Following parameters will be required to insert an image using <img> tag
+
+src attribute –  It is used to add the path to the image (URL of the image). 
+alt attribute – It is for adding alternate text.
+Width – To add the width of the image
+Height – To add the height of the image
+Example: 
+
+<img src=”img_pancakes.jpg” alt=”Blueberry Pancakes” width=”500″ height=”600″>
+
+Below is the code to insert an image in an HTML page: 
+
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+
+  …
+
+</head>
+
+ <body>
+
+…
+
+<img src=”URL” alt=”add_alttext” width=”width” height=”height”>
+
+…
+
+</body>
+
+ </html>
+
+Q15. How to align text in HTML?
+Ans. HTML content is aligned on a page using the CSS text-align property. It sets the horizontal alignment of the content inside a block element or table-cell box. The text-align property works like vertical-align but in the horizontal direction. It works on text as well as on all other content inside the block element, such as images and buttons. 
+
+Below is the code to align text in HTML: 
+
+<!DOCTYPE html>
+
+<html>
+
+ <head></head>
+
+<body>
+
+<h1>Heading</h1>
+
+ <p style=”text-align:center/left/right/justify;”>text</p>
+
+ </body>
+
+</html>
+
+Check out the Top Web Development Courses to Start a Career as a Web Developer
+
+Q16. How to write text on image in HTML
+Ans. Below is the code to write text on image in HTML: 
+
+<div class=”container”>
+
+  <img src=”img_tree_wide.jpg” alt=”Tree” style=”width:100%;”>
+
+  <div class=”bottom-left”>Bottom Left</div>
+
+  <div class=”top-left”>Top Left</div>
+
+  <div class=”top-right”>Top Right</div>
+
+  <div class=”bottom-right”>Bottom Right</div>
+
+  <div class=”centered”>Centered</div>
+
+</div>
+
+Q17. How comments can be added in CSS?
+Ans. We can add comments in CSS using /* and */.
+
+Q18. How to underline text in HTML?
+Ans. To underline the text in HTML, we use the <u> tag.
+
+Q19. How do you bold text in HTML?
+Ans. The <b> </b> tag or <strong> </strong> tag are used to bold text in HTML.
+
+ 
+
+Advanced HTML Interview Questions and Answers
+The following are the commonly asked advanced-level HTML interview questions:
+
+Q20. What are the new input types in HTML5 for forms?
+Ans. The following are the new input types in HTML5 for forms:
+
+INPUT TYPE	DESCRIPTION	HTML MARKUP
+date	Allows the user to select a date	<input type=”date”>
+datetime	Allows the user to select date and time using UTC date and time format	<input type=”datetime”>
+datetime-local	To select the date and time as per the local time	<input type=”datetime-local”>
+month	Select month and year	<input type=”month”>
+time	The time of day	<input type=”time”>
+week	Enables you to select the week and year	<input type=”week”>
+color	Enables you to enter a simple color value 	<input type=”color””>
+email	Validates the input using the standard email format	<input type=”email”>
+search	Searches a data set 	<input type=”search”>
+number	Accepts only numbers 	<input type=”number”>
+url	Accepts only URLs 	<input type=”url”>
+Q21. What is a marquee?
+Ans. Marquee tag is a non-standard HTML element that causes text to scroll up, down, left, or right automatically. You can put the text which you want to scroll on a web page within the following tag:
+
+<marquee>……</marquee>
+
+Q22. What happens if you open the external CSS file in a browser?
+Ans. If you try to open the external CSS file in a browser, the browser will not open the file. This is because the file has a different extension. The only way to use an external CSS file is to reference it using the <link/> tag within another HTML document.
+
+Q23. Which tags are used to separate a section of texts?
+Ans. The following three tags are used to separate a section of texts:
+
+<br> – to separate the line of text. It breaks the current line and conveys the flow to the next line
+<p> – It contains the text in the form of a new paragraph.
+<blockquote> – defines a large quoted section. 
+Also Read: PHP Interview Questions and Answers
+
+Q24. Explain the use of an iframe tag.
+Ans. The <iframe> tag specifies an inline frame. It is used to display a web page within a web page (to embed another document within the current HTML document). 
+
+For example – The src attribute is used to specify the URL of the document that occupies the iframe.
+
+Syntax: 
+
+<iframe src=”URL”></iframe>
+
+Here’s the list of Top Universities Offering Free Online Programming Courses
+
+Q25. What is the difference between LocalStorage and SessionStorage Objects?
+Ans. The differences between LocalStorage and SessionStorage Objects are:
+
+LocalStorage Object	SessionStorage Object
+1. It stores the data without an expiry date.	1. Stores the data for only one session.
+2. The data can be shared between multiple windows of the browser.	2. Data is accessible only in the current window of the browser.
+3. Data is not deleted when the browser window closes.	3. The data is deleted if the browser window closes.
+Q26. What are the different media types and formats supported by HTML?
+Ans. HTML supports a variety of media formats for sound, music, videos, movies, and animations. The different formats supported by HTML are: 
+
+Images: jpg, jpeg, png, gif, svg, apng, BMP ico
+Audio: RealAudio, WMA, MIDI, AAC, WAV, MP3, MP4
+Video: MPEG, AVI, QuickTime, RealVideo, WMV, Flash, WebM, and MP4
+Q27. Explain an image map in HTML.
+Ans. An image map is defined by the <map> tag. Using this the image map tag, we can linking the different web pages using a single image. We can add one or more clickable areas in a single image using <area> tags.
+
+Q28. How to create a multi-colored text on a web page?
+Ans. We can use <font color =”color”> </font> to create multi-colored text on a web page for the specific texts that you want to color.
+
+Q29. How to add a favicon in HTML?
+Ans. Below is the code to add a favicon. Access the code of your webpage and in the <HEAD> section add the following code. 
+
+<link rel=”icon” type=”image/png” href=”/favicon.png”/> 
+
+<link rel=”icon” type=”image/png” href=”https://example.com/favicon.png”/>
+
+Q30. What is the difference between HTML and XHTML?
+Ans. The differences between HTML and XHTML are: 
+
+HTML	XHTML
+HTML stands for Hypertext Markup Language.	XHTML stands for Extensible Hypertext Markup Language.
+It is extended from SGML (Standard Generalized Markup Language).	It has features of both XML and HTML.
+HTML is a static Web Page.	XHTML is a dynamic Web Page.
+It uses a document file format.	It uses markup language.
+HTML is about displaying information.	It is about describing the information.
+Not case sensitive.	XHTML is case-sensitive. Every tag and attribute should be in lower case.
+Not necessary to close the tags in the order they are opened.	It is necessary to close the tags in the order they are opened.
+All content can be included in the body element.	All contents must be put in blocks.
+It requires a lenient HTML-specific parser.	Parsing is done with a standard XML parser.
+Filename extensions are: .html, .htm	Filename extensions are: .xhtml, .xht, .xml, .html, .htm
+Q31. What is URL Encoding? Why are URLs encoded in HTML?
+Ans. URL Encoding is the process of encoding non-ASCII characters in URLs to a format that is universally accepted by web browsers. URLs are sent over the Internet using the ASCII character set. If a URL contains characters outside the ASCII set, the URL has to be converted. 
+
+URL is encoded in HTML as it converts non-ASCII characters into a format that can be transmitted over the web. The URL encoding replaces non-ASCII characters with a “%” followed by hexadecimal digits.
+
+Looking for one single place to learn and grow in your career? Here’s the list of Top Online IT Courses for freshers and experienced professionals.
+
+Q32. How many types of CSS can be included in HTML?
+Ans. This is one of the commonly asked HTML CSS interview questions.
+
+There are three types of CSS: 
+
+Inline CSS – using the style attribute inside HTML elements
+Inline CSS is used for styling small contexts. It contains the CSS property in the body section attached with the element. The style attribute is used in the relevant tag to use inline styles add.
+
+Example: 
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body style=”background-color:white;”>  
+
+<h1 style=”color:red;”>A Red Heading</h1>
+
+<p style=”color:blue;”>A blue paragraph.</p>
+
+</body>  
+
+</html>  
+
+Internal or Embedded CSS – using <style> element in the <head> section
+It requires you to add <style> tag in the <head> section of the HTML document. It is most suited for styling a single page that has a unique style. However, using this style for multiple pages is time-consuming as CSS rules need to be added to every page of the website.
+
+Example: 
+
+<head>  
+
+<style>  
+
+body {  
+
+    background-color: black;  
+
+}  
+
+h1 {  
+
+    color: red;  
+
+    padding: 50px;  
+
+}   
+
+</style>  
+
+</head>  
+
+External CSS – using a <link> element to link to an external CSS file
+It is used when the style is applied to many pages. To use an external CSS, add a link to it in the <head> section of each HTML page. 
+
+Example: 
+
+<head>
+
+<link rel=”stylesheet” type=”text/css” href=”mystyle.css” />
+
+</head>
+
+Q33. What is the use of the figure tag in HTML 5?
+Ans. The <figure> tag identifies self-contained content related to the main content. It is used for adding self-contained content like photos, diagrams, illustrations, etc. The figure, its caption, and its contents are referenced as a single unit from the main flow of the document. The <figure> tag has two elements img src and figcaption. Img src is used for adding image source in a document while figcaption sets the caption of an image.
+
+Example: 
+
+<figure>
+
+    <img src=”pancakes.jpg” alt=”Blueberry Pancakes”>
+
+    <figcaption>A Stack of Blueberry Pancakes</figcaption>
+
+</figure>
+
+Q34. What is a datalist tag?
+Ans. The <datalist> tag provides autocomplete feature in the HTML files. It enables users to add the autocomplete form based on the predefined options. It can be used with an input tag so that users can easily fill the data in the forms using predefined options.
+
+Example: If you press A, it will show a list of cars starting with A letter.
+
+ <label for=”car”>Choose your car from the list:</label>
+
+<input list=”cars” name=”car” id=”car”>
+
+<datalist id=”cars”>
+
+  <option value=”Honda”>
+
+  <option value=”Hyundai”>
+
+  <option value=”Maruti”>
+
+  <option value=”Audi”>
+
+  <option value=”BMW”>
+
+</datalist>
+
+Conclusion
+We hope that the frequently asked HTML interview questions and answers mentioned in this blog will help you to crack your next interview and acquire your dream job.
+
+HTML Career FAQs
+Q1. What is the role of an HTML developer?
+
+Ans. An HTML developer is a front-end web developer responsible for the complete end-to-end coding of websites. They use coding languages to create the visual appearance of websites. They often collaborate with web designers and back-end web developers.
+
+Q2. What are the skills required to become an HTML developer?
+
+Ans. The following are the skills required to become an HTML developer: Good understanding of computer-programming technologies; knowledge of how to design, build, and deploy web pages, sites, or applications; ability to create websites using HTML, XML, Java, CSS and other languages; detail-oriented approach; organizational skills; ability to multitask.
+
+Q3. Can I learn HTML on my own?
+
+Ans. Yes, you can learn HTML on your own. There are a variety of resources available to help you learn HTML. There are a lot of websites, online tutorials, YouTube videos, and online courses that can help you learn HTML from the comfort of your home.
+
+Q4. Is HTML easy to learn?
+
+Ans. Yes, HTML is easy to learn. Since it is a coding language, you may find it a little difficult to learn at first. However, if you are willing to learn and move ahead step by step, then you will be able to master HTML within a week or two.
+
+Q5. Is HTML worth learning?
+
+Ans. Yes, HTML is a valuable skill to learn. Almost every organization that has a website looks for HTML or CSS developers. Thus, the demand for HTML developers is on the rise and will continue in the years to come. Moreover, whether you are interested in building your own websites, or pursuing a career as a web developer, knowing HTML will be an advantage.
