@@ -1,0 +1,206 @@
+4. State the restrictions of CSS?
+
+Limitations of CSS are:
+
+No expressions
+Limitations of vertical control
+Ascending by selectors is not possible
+No column declaration
+Rules, targeting specific text, and styles not possible
+Dynamic behavior does not control pseudo-class
+5. List the benefits of CSS?
+
+Advantages of CSS are:
+
+Bandwidth
+Accessibility
+Page reformatting
+Site-wide consistency
+Content separation from the presentation
+6. Define CSS frameworks?
+
+CSS frameworks are pre-planned libraries, which allow much easier and more standard-compliant designing and styling of a webpage by using CSS language.
+
+7. Who postulates the specifications of CSS?
+
+CSS specifications are maintained by the World Wide Web Consortium.
+
+8. What are the ways in which CSS can be integrated as a website?
+
+CSS can be integrated as a web page in three ways:
+
+Inline: CSS applied HTML element by attributing style.
+Embedded: The code can be placed within a Style element inside the Head element.
+Linked/ Imported: CSS can be kept in an external file and then linked via a link element.
+9. What merits and disadvantages do External Style Sheets offer? 
+
+Merits:
+
+Only one file can be utilised to take control of various documents each having different styles.
+Multiple elements of HTML can have multiple documents which can then have multiple classes.
+Composite situations, grouping, and methods as selectors can be used to group styles.
+Demerits:
+
+For documents having different style information, an extra download is needed.
+External style sheets have to be downloaded to furnish the document.
+It is not practical for definitions of small style.
+10. State the benefits and disadvantages of Embedded Style Sheets?
+
+Merits:
+
+The extra download is not needed.
+In a single document, multiple types of tags can be created.
+Selector and grouping methods can be used to apply styles in complex situations.
+Demerits::
+
+Cannot be used to control multiple documents.
+11. What is the meaning of the CSS selector?
+
+CSS selector is a string equivalent of HTML using which a declaration or a set of declarations are declared. It is a link used for lining the Style sheet and HTML in the CSS selector.
+
+12. What are the media types allowed by CSS?
+
+Media furnishes the customisation and design of the documents. Media control can be used to retrieve and use external style sheets by loading them from the network.
+
+13. Differentiate between physical tags and logical tags?
+
+Logical tags are useless for appearances while physical tags are a mark-up in presentation.
+Logical tags are old versions and concentrate only on content whereas physical tags are the new versions.
+Learn Software Courses online from the World’s top Universities. Earn Executive PG Programs, Advanced Certificate Programs, or Masters Programs to fast-track your career.
+
+14. State the difference between Style Sheet and HTML?
+
+HTML lacks styling even though HTML has an easy structure method. Styling Sheets not only offer styling but also have better formatting options and browsing capabilities.
+
+15. Describe ‘ruleset’?
+
+Identification of selectors that can be linked to other selectors is done by the ruleset.
+
+16. Is there Case-sensitivity in CSS?
+
+There is no case sensitivity in CSS, although font families and URLs have case sensitivity.
+
+17. Give the definition of the Declaration block?
+
+A declaration block is a catalog of direction which consists of property, value, and colon within braces.
+
+18. Enlist the various attributes of font?
+
+They are:
+
+Font-style
+Font-variant
+Font-weight
+Font-size/line-height
+Font-family
+Caption
+Icon 
+19. Why does inserting a file make importation easy?
+
+Importing allows the feature of combining external sheets to be placed in various sheets. Different sheets and files can be used to get a different function.
+
+20. What is the use of a Class selector?
+
+Class selectors are selectors that have a unique attribution to a specific style. Declaration of HTML with association and style can be done through this.
+
+21. What is the difference between a Class selector and an ID selector?
+
+ID selector only chooses a single element that differs from the other elements, while a class selector chooses an overall block. An element can sometimes have both a class and an ID. ID’s are unique but classes are not.
+
+22. Can you add more than one declaration in CSS?
+
+A semicolon can be used to add more than one declaration in CSS.
+
+23. What are Pseudo-elements?
+
+Pseudo-elements add several special effects to selectors. CSS applies various styles in HTML mark-up but sometimes, extra styling or mark-up in the document is not possible. This is when a feature known as pseudo-elements is used which is available in CSS. It permits extra styling or mark-up without disturbing or tampering with the actual document.
+
+24. How to overrule underlining Hyperlinks?
+
+Underlining Hyperlinks can be overruled by using external style sheets and control statements.
+
+25. Can CSS help in restoring default property value? 
+
+In CSS, due to a lack of default values, reverting back to old values is not possible. The property has to be re-declared in order to get back the default property.
+
+List the kinds of Media types used in CSS?
+
+Different media have different properties in CSS because they are case insensitive.
+
+They are:
+
+Aural (for speech and sound synthesisers)
+Print
+Projection
+Handheld
+Screen
+27. Define CSS Box Model and state its elements?
+
+The CSS box model defines the layout and design of all the elements of CSS. These include: Margin, Border, Padding, and Content.
+
+28. What is a contextual selector?
+
+The contextual selector is used to select the special occurrences of an element.
+
+29. Compare Hexadecimal color codes with RGB values?
+
+A color can be detailed in two ways:
+
+By characters i.e. hexadecimal coding of colors with a combination of letters and numbers preceded by #.
+By a mixture of blue, green, and red where the value of the color can be specified.
+30. Define Image sprites with context to CSS?
+
+Image Sprites is the process of collaborating several images into one. It reduces the time taken in loading images and gives information more quickly.
+
+31. Compare Grouping and Nesting in CSS?
+
+Grouping:  In grouping, the code can be reduced by literally grouping selectors that have the same properties or values. 
+
+Nesting: In nesting, a selector is specified within another selector.
+
+32. How can the dimensions of an element be defined?
+
+Dimension properties of an element can be defined by:
+
+Height
+Max-height
+Max-width
+Min-height
+Min-width
+Width
+33. What is float property?
+
+Using float property, an image can be moved along with the text to the right or to the left. Applying this property does not change the properties of the elements it is applied to.
+
+34. How does the Z index function?
+
+Sometimes, while positioning the elements of HTML using CSS, overlapping may occur. Z index helps in identifying and specifying the element that is overlapping. Z index’s default value is zero, but it can be a positive or a negative number.
+
+36. Which of them is precedent: HTML procedures or CSS properties?
+
+CSS properties are precedent over the HTML procedures. Even browsers with no CSS support, display the HTML attributes.
+
+37. Define Inline style?
+
+The Inline style is used on individual elements of HTML to add styling.
+
+38. In CSS, how can comments be added?
+
+/* and */ can be used to add comments in CSS.
+
+39. What is Attribute Selector?
+
+An attribute selector is a set of values, elements, and their parts.
+
+40. Define property?
+
+Property is a style that helps in influencing the CSS language. They contain corresponding properties or values within them. Eg. Font, which has different styles like italic, bold, etc.
+
+41. What is at-rule?
+
+
+At-rule is a rule which is applicable on the whole sheet and not partly. It is preceded by @ followed by A-Z, a-z, or 0-9.
+
+42. What is the difference between CSS and CSS3?
+
+CSS does not have the concept of modules. CSS3 incorporates a new feature where it can group CSS codes into convenient modules. Modules ensure that all styles for a specific component will reside in one place.

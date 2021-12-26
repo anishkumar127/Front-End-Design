@@ -1,0 +1,259 @@
+Question: What is CSS?
+Answer: CSS or Cascading Style Sheets is a styling language that is simple enough for HTML elements that find usage in web designing. Besides, the application of CSS is also found in XHTML.
+
+Question: What are the different variations of CSS?
+Answer: The different variations of CSS include:
+
+CSS 4
+CSS 3
+CSS 2.1
+CSS 2
+CSS 1
+Question: What are the benefits of using CSS?
+Answer: There are multiple benefits of using CSS, such as:
+Accessibility
+Page reformatting
+Site-wide consistency
+Bandwidth
+Separation of the bandwidth of presentation
+Question: What are the disadvantages of CSS?
+Answer: The disadvantages of using CSS are:
+
+Target specific texts, styling, and rules are not allowed.
+There are no expressions.
+There is no dynamic behavior to control pseudo-class.
+It is not possible to ascend by selectors.
+Vertical control is limited.
+The column declaration is not there.
+Question: What is meant by CSS frameworks?
+Answer: CSS frameworks are pre-planned libraries, allowing a more convenient web page styling which is also compliant with standards.
+
+Question: Give a few examples of modules found in the present version of CSS.
+Answer: Some of the commonly used modules in CSS include:
+
+Box Model
+Selectors
+Text effects
+Backgrounds and Borders
+Animations
+2D/3D Transformations
+User Interface.
+Multiple Column Layout
+Question: What is the difference between CSS2 and CSS3?
+Answer:
+
+In CSS2, everything is present in a single document while CSS3 is categorized into multiple sections called modules.
+Graphics-related features such as Box-shadow or Border-radius, flexbox, etc. can be found which are absent incase of CSS2.
+Properties such as background-position, background-image, and background-repeat styles can be helpful for using multiple background images in a single webpage.
+CSS3 versions support many new browsers.
+CSS3 introduces many new selectors in the form of pseudo-elements and pseudo-classes.
+Question: Name a few CSS style components
+Answer: A few CSS style components include Property, Value, and Selector
+
+Question: What do you understand by CSS opacity?
+Answer: The technical definition of opacity is the degree to which light is allowed to pass through an object.
+
+CSS opacity is the property used to describe the transparency of an element. Or, in other words, it explains how clear the image is.
+
+Question: How can the background color of an element be changed?
+Answer: The background color of an image can be changed using the background-color property.
+
+body 
+{
+background-color: coral;
+}
+Question: How can image repetition of the backup be controlled?
+Answer: Background-repetition property controls the repetition of images in the background. Use no-repeat if the image is to be displayed once in the background.
+
+<html>
+<head>
+<style>
+body {
+background-image: url("/css/images/css.jpg");
+background-repeat: repeat;
+}
+</style>
+</head>
+<body>
+<p>CSS Background Image: Hackr.io</p>
+</body>
+</html>
+Question: What is the use of the background-position property?
+Answer: It can be used to define the initial position of a background image. The default position is the top left of the page. The positions that can be set include top, bottom, left, right, and center.
+
+<html>
+<head>
+<style>
+body {
+background-image: url('hackr.gif');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+<p>CSS Background Position: Hackr.io</p>
+</body>
+</html>
+Question: Which property controls the image scroll in the background?
+Answer: Image scroll in the background can be controlled using the background-scroll property.
+
+Question: Why should background and color be used as separate properties?
+Answer: This is done with mainly two purposes:
+
+It makes the style sheets more legible. Background property, which is complex in itself, becomes all the more complex with color.
+Color is an in-built property while the background is not one. And this can lead to a lot of confusion.
+Question: How to center block elements using CSS1?
+Answer: In order to center the block-level elements, we need to set the margin-right and margin-left properties to explicit values.
+
+Question: How to maintain the CSS specifications?
+Answer: It is maintained using the World Wide Web Consortium.
+
+Question: What are the ways to integrate CSS as a web page?
+There are three methods to integrate CSS in the form of a web page:
+
+Embedded: There can be a style element inside the head element inside which we can place the code.
+Inline: CSS applied HTML elements can be found using style attributes.
+Imported or Linked: In the case of linked or imported CSS, the CSS is placed in an external file and a link element is used to link it.
+Question: What are the external style sheets?
+Answer: External style sheets are sheets used externally which can be linked to the HTML pages.
+Question: What is embedded style sheets?
+Answer: These are the sheets where style sets for the entire HTML document are defined in a single place. For doing this, the style sheet information under the style tags should be embedded into an HTML document.
+
+Question: What are the advantages and disadvantages of using external style sheets?
+Answer:
+
+Advantages
+
+There can be many documents for multiple HTML elements, along with many classes.
+Multiple documents with various styles can be controlled using different styles.
+Selector and grouping methods can be used for grouping styles in composite situations.
+Disadvantages
+
+For rendering the document, external style sheets have to be loaded.
+It is not suitable for small style definitions.
+For importing documents with style information, an additional download is required.
+Question: What are the advantages and disadvantages of embedded style sheets?
+Answer:
+
+Advantages
+
+You can create different tag types inside a document.
+The additional download is not required, unlike external style sheets.
+In complicated situations, you can use Grouping and Selector methods to apply styles.
+Disadvantage
+
+You cannot control multiple documents.
+ 
+
+Advance CSS Interview Questions
+Question: What is the meaning of the CSS selector?
+Answer: Just like there is the string in HTML, there is a selector in CSS which is used for the purpose of linking HTML and style sheet elements.
+
+Question: What are the media types allowed by CSS?
+Answer: CSS allows different media types such as speech, audio, visual and tactile media, paged or continuous media, bitmap or grid media, and even interactive media.
+
+Question: What is the ruleset?
+Answer: Rulesets can be used to identify the selectors attached to one another.
+
+It consists of two different parts- selector and declaration.
+
+Question: How case-sensitive is CSS?
+Answer: CSS is not case-sensitive but the URLs of images and font families are case-sensitive. Only in case of usage of XML declarations with XHTML DOCTYPE on the page, we find CSS to be case-sensitive.
+
+Question: What is a declaration block?
+Answer: It is basically a catalog of directions comprising the property, followed by a colon, and finally the value enclosed within braces.
+
+Question: What are the different font attributes available?
+Answer: The various font attributes available include font-variant, font-weight, font-style, font-family, line-height of font size, caption, icon, and font-family.
+
+Question: How does importing a file make it easy to insert?
+Answer: Importing of files helps in integrating external sheets that can be inserted in multiple sheets. There can be different sheets and styles for different functions.
+Question: What is the difference between physical and logical tags?
+Answer: Logical tags are older as compared to the physical ones and mainly focus on the content. They hardly find any usage in terms of presentation. Logical tags do not find any application in terms of aesthetics while the physical ones find their application in presentation too.
+
+Question: How does the style sheet concept differ as compared to HTML?
+Answer: Style sheets associate a styling factor with them. HTML, on the other hand, offers an easy structure method. Style sheets also feature better formatting options and browsing capabilities.
+
+Question: Is it possible to add multiple declarations in CSS?
+Answer: Yes, we can do this with the help of semicolons.
+
+Question: What are pseudo-elements?
+Answer: These elements are used to provide special effects to certain selectors. CSS finds usage in applying styles in the HTML markups. If by any chance, additional styling or markup is not feasible for the document, this feature of pseudo-elements helps by allowing extra markup without hampering the original document.
+
+Question: What is Tweening?
+Answer: It is the process by which intermediate frames between two pictures are created in order to find the appearance of the first image developing into the second.
+
+Question: What are CSS counters?
+Answer: These are variables that can be increased by using CSS that inspect and find the number of times of usage of variables.
+
+Question: What is meant by a universal selector?
+Answer: It is a selector which can match the name of any element type, rather than selecting the elements of a specific category.
+
+Question: How to select all the elements of a paragraph?
+Answer: The elements in a paragraph can be selected using the p[lang] command.
+
+Question: How are percentage values decoded in CSS?
+Answer: The percentage values are decoded in CSS using a percentage symbol.
+
+Question: What is RWD?
+Answer: RWD is the abbreviated form of Responsive Web Design. It is used to display the designed page suitably on any kind of screen size depending on the device under consideration.
+
+Question: What is the float property of CSS?
+Answer: It is used to position an image to the left or right as required including the text wrapping around it. The property of the elements used before it remains unchanged.
+
+Question: What is the difference between visibility: hidden and display:none?
+Answer: The difference between visibility:hidden and display:none properties is that in the case of the former, the elements are hidden but not deleted. No space is consumed.
+
+In case of the latter, the element is hidden and the layout is affected, that is, some space is taken up.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3 
+{
+display: none;
+}
+</style>
+</head>
+<body>
+<h2>This heading is visible</h2>
+<h3>This is a hidden heading</h3>
+<p>The hidden heading does not take up space even after hiding it since we have used display: none;.</p>
+</body>
+</html>
+visibility:hidden
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3 {
+visibility:hidden;
+}
+</style>
+</head>
+<body>
+<h2>This heading is visible</h2>    
+<h3>This is a hidden heading</h3>    
+<p>The hidden heading takes up space even after hiding it.</p>
+</body>
+</html>
+Question: What is the difference between the class selector and ID selector?
+Answer: A class selector takes an overall block while an ID selector takes a single element that differs from others.
+
+Use of CSS class selector
+
+<style>
+.center {
+text-align: center;
+color:red;
+}
+</style>
+Use of CSS ID Selector
+
+<style>
+#para1
+{
+text-align: centre;
+color:red;
+}
+</style>

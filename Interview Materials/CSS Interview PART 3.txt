@@ -1,0 +1,395 @@
+Q #1) What is CSS?
+
+Answer: CSS outlines the style of an HTML webpage. It is a language by which we can set the behavior of an HTML webpage. It describes how the HTML content will be shown on screen.
+
+CSS controls the layout of several HTML web pages. CSS is referred to as the Cascading Style Sheet.
+
+Q #2) Name all the modules which are used in the current version of CSS.
+
+Answer: There are several modules in CSS as stated below:
+
+Selectors
+Box Model
+Backgrounds and Borders
+Text Effects
+2D/3D Transformations
+Animations
+Multiple Column Layout
+User Interface.
+Q #3) Distinguish between CSS2 and CSS3.
+
+Answer: The differences between CSS2 and CSS3 are as follows:
+
+CSS3 is divided into two various sections which are called a module. Whereas in CSS2 everything accedes into a single document with all the information in it.
+CSS3 modules are supported almost on every browser and on the other hand modules of CSS and CSS2 are not supported in every browser.
+In CSS3, we will find that many graphics related characteristics have been introduced like Border-radius or box-shadow, flexbox.
+In CSS3, a user can precise multiple background images on a webpage by using properties like background-image, background-position, and background-repeat styles.
+Q #4) Cite different types of CSS.
+
+Answer: There are three types of CSS as mentioned below:
+
+External: These are written in separate files.
+Internal: These are cited at the top of the web page code document.
+Inline: These are written right next to the text.
+Q #5) Why is the external style sheet useful?
+
+Answer: External style sheet is very useful as we write all the styling codes in a single file and it can be used anywhere by just referring to the link of that external style sheet file.
+
+So, if we do any changes in that external file, then the changes can also be observed on the webpage. Thus we can say that it is very useful and it makes your work easy while working on larger files.
+
+Q #6) What are the uses of an embedded style sheet?
+
+Answer: Embedded style sheet gives us the privilege to define styles in one place in an HTML document.
+
+We can generate multiple classes using an embedded style sheet to use on multiple tag types of a web page and also there is no extra downloading required for importing the information.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style type="text/css">
+p {
+  font-family: georgia, serif;
+  font-size: x-large;
+  color:#ff9900;
+  }
+a:hover {
+  color: LimeGreen;
+  text-decoration: none;
+  }
+</style>
+</head>
+
+<body>
+<p>Embedded style sheet gives us the privilege to define styles at one place in a HTML document. 
+We can generate multiple classes using embedded style sheet to use on multiple tag types a web page 
+and also there is no extra downloading required importing the information.
+</p>
+</body> 
+
+</html>
+embedded
+
+Q #7) How to use CSS selector?
+
+Answer: By using the CSS selector, we can choose the content which we want to style so that we can say that it is a bridge between the style sheet and the HTML files.
+
+The syntax for CSS selector is “select” HTML elements created on their id, class, type, etc.
+
+Q #8) Explain the concept of Tweening.
+
+Answer: Tweening is the process in which we create intermediate frames between two images to get the appearance of the first image which develops into the second image.
+
+It is mainly used for creating animation.
+
+Q #9) Define CSS image scripts.
+
+Answer: CSS image scripts are a group of images that are placed into one image. It reduces the load time and request number to the server while projecting multiple images into a single web page.
+
+Q #10) Explain the term Responsive web design.
+
+Answer: It is a method in which we design and develop a web page according to the user activities and conditions which are based on various components like the size of the screen, portability of the web page on the different devices, etc. It is done by using different flexible layouts and grids.
+
+Q #11) What are CSS counters?
+
+Answer: CSS counters are variables that can be incremented by rules of CSS that inspector track how many times the variable has been used.
+
+Q #12) What is CSS specificity?
+
+Answer: CSS specificity is a score or rank that decides which style declaration has to be used to an element. (*) this universal selector has low specificity while ID selectors have high specificity.
+
+There are four categories in CSS which authorize the specificity level of the selector.
+
+Inline style
+IDs
+Classes, Attributes, and pseudo-classes.
+Elements and pseudo-elements.
+Q #13) How can we calculate specificity?
+
+Answer: To calculate specificity we will start with 0, then we have to add 1000 for each ID and we have to add 10 to the attributes, classes or pseudo-classes with each element name or pseudo-element and later we have to add 1 to them.
+
+Example:
+
+h2
+             #content h2
+            <div id=”content”>
+              <h2 style=”color:#FF0000”>heading</h2>
+            </div>
+Q #14) How do we make a rounded corner by using CSS?
+
+Answer: We can make a rounded corner by using the property “border-radius”. We can apply this property to any element.
+
+Example:
+
+<html>
+<head>
+
+<style>
+#rcorners1 {
+    border-radius: 25px;
+    background: #715751;
+    padding: 20px;
+    width: 200px;
+    height: 150px;   
+}
+
+</style>
+</head>
+
+<body>
+<h1>The border-radius Property</h1>
+<p>Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+</body>
+
+</html>
+border-radius
+
+Q #15) How will you add border images to an HTML element?
+
+Answer: We can set the image to be used as the border-image alongside an element by using the property of CSS “border-image”.
+
+Example:
+
+#borderimg {
+    border: 15px solid transparent;
+    padding: 20px;
+    border-image: url(border.png) 30 round;
+}
+Q #16) What are gradients in CSS?
+
+Answer: It is a property of CSS which allows you to display a smooth transformation between two or more than two specified colors.
+
+There are two types of gradients that are present in CSS. They are:
+
+Linear Gradient
+Radial Gradient
+Q #17) What is CSS flexbox?
+
+Answer: It allows you to design a flexible responsive layout structure without using any float or positioning property of CSS. To use CSS flexbox you need to define a flex container initially.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.flex-container {
+  display: flex;
+  background-color: #f4b042;
+}
+
+.flex-container > div {
+  background-color: #d60a33;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div> 
+</div>
+<p> Example of  <em>flex</em>box.</p>
+</body>
+</html>
+flexbox
+
+Q #18) Write all the properties of the flexbox.
+
+Answer: There are several properties of the flexbox that are used in the HTML webpage.
+
+They are:
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+Q #19) How to align image vertically in a division that spans vertically on the whole webpage?
+
+align image vertically in a division
+
+Answer: It can be done by using the syntax verticle-align: middle in the <div1> element and even we can bind the two text spans around with another span and after this, we have to use verticle-align: middle in the content #icon.
+
+Q #20) What is the difference between padding and margin?
+
+Answer: In CSS, the margin is the property by which we can create space around elements. We can even create space to the exterior defined borders.
+
+In CSS, we have margin property as follows:
+
+margin-top
+margin-right
+margin-bottom
+Margin-left
+Margin property has some defined values as shown below.
+
+Auto – Using this property browser calculates the margin.
+Length – It sets the margin values in px,pt,cm etc.
+% – It sets the width % of the element.
+Inherit – By this property we can inherit the margin property from the parent element.
+In CSS, padding is the property by which we can generate space around an element’s content as well as inside any known border.
+
+CSS padding also has properties like,
+
+Padding-top
+Padding-right
+Padding-bottom
+Padding-left
+Negative values are not allowed in padding.
+
+div {
+padding-top: 60px;
+padding-right: 40px;
+padding-bottom: 50px;
+padding-left: 70px;
+}
+Q #21) What is the use of the Box Model in CSS?
+
+Answer: In CSS, the box model is a box that binds all the HTML elements and it includes features like margins, border, padding, and the actual content.
+
+By using a box model we will get the authority to add the borders all around the elements and we can also define the space between the elements.
+
+Q #22) How can we add icons to the web page?
+
+Answer: We can add icons to the HTML webpage by using an icon library like font-awesome.
+
+We have to add the name of the given icon class to any inline HTML element. (<i> or <span>) . Icons in the icon libraries are scalable vectors that can be customized with CSS.
+
+Q #23) What is a CSS pseudo-class?
+
+Answer: It is a class that is used to define a special state of an HTML element.
+
+This class can be used by styling an element when a user snooped over it and also it can style an HTML element when it gets the focus.
+
+selector:pseudo-class {
+property:value;
+}
+Q #24) Explain the concept of pseudo-elements in CSS.
+
+Answer: It is a feature of CSS which is used to style the given parts of an element.
+
+For Example, we can style the first letter or line of an HTML element.
+
+selector::pseudo-element {
+property:value;
+}
+Q #25) What is CSS opacity?
+
+Answer: It is the property that elaborates on the transparency of an element.
+
+By this property, we can transparent the image that can take the values from 0.0-1.0. If the value is lower, then the image is more transparent. IE8 and earlier versions of the browser can take the values from 0-100.
+
+img {
+opacity: 0.6;
+filter: alpha(opacity=60); /* For IE8 and earlier */}
+Q #26) Write all the position states used in CSS.
+
+Answer: In CSS, there are four position states as stated below:
+
+Static(default)
+Relative
+Fixed
+Absolute
+Q #27) What are navigation bars in CSS?
+
+Answer: By using navigation bars we can make an ordinary HTML page into a user-specific and more dynamic web page. Basically, it is a list of links, hence use of <ul> and <li> elements makes the perfect sense.
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+Q #28) What are the differences between relative and absolute in CSS?
+
+Answer: The main difference between relative and absolute is that “relative” is used for the same tag in CSS and it means that if we write the left:10px then the padding will shift to 10px in the left while absolute is totally relative to the non-static parent.
+
+It means, if we write left:10px then the result will be 10px far from the left edge of the parent element.
+
+Q #29) Define ‘important’ declarations used in CSS.
+
+Answer: Important declarations are defined as that declaration which is having more importance than the normal declaration.
+
+While executing, these declarations override the declaration which is having less importance.
+
+For example, if there are two users having an important declaration then one of the declarations will override the declaration of another user.
+
+For Example:
+Body {background: #FF00FF !important; color: blue}
+
+In this body, background has more weight than the color.
+
+Q #30) Define different cascading methods that can be used inside the cascading order.
+
+Answer: Cascading order is itself a sorting method that allows many other different sorting methods:
+
+a) Sort by origin: There are some rules which can provide an alternate way defined as:
+
+The normal weight of the style sheet of a particular provider will be overridden by the increased weight of the user’s style sheet.
+Stylesheet rules of a particular user will be overridden by the normal width of the provider’s style sheet.
+b) Sort by selector’s specificity: Less specific selector is been overridden by the more specific selector.
+
+For example, A contextual selector is less specific in comparison to the ID selector which is a more specific one and with that contextual selector is been overridden by the ID selector.
+
+c) Sort by order specified: This comes in the scenario when the two selectors are of same weight and the other properties than the specification which will be seen for overriding.
+
+Example:
+
+All other styles will be seen overridden if the style attribute is used for inline style.
+
+And also, if the link element is used for external style, then it will override the imported style.
+
+Q #31) Differentiate between inline and block element.
+
+Answer: Inline element does not have an element to set width and height and also it does not have the line break.
+
+Example: em, strong, etc.
+
+Block element specification:
+
+They do have the line break.
+They define the width by setting a container and also allow setting height.
+It can also contain an element that occurs in the inline element.
+Example:
+
+width and height
+max-width and max-height
+min-width and min-height
+hi (i=1-6)- heading element
+p- Paragraph element.
+
+Q #32) How is the concept of inheritance applied in CSS?
+
+Answer: Inheritance is a concept in which the child class will inherit the properties of its parent class. It is a concept which is been used in many languages and is the easy way of defining the same property again.
+
+It is used in CSS to define the hierarchy from the top level to the bottom level. Inherited properties can be overridden by the children’s class if the child uses the same name.
+
+Example:
+
+Body {font-size: 15pt;}
+
+And another definition is being defined in the child class
+
+Body {font-size: 15pt;}
+H1 {font-size: 18pt;}
+
+All the paragraph text will be displayed using the property and will be defined in the body except for the H1 style which will show the text in font 18 only.
+
+Q #33) Differentiate between the ID and class.
+
+Answer: Both ID and class is been used in HTML and assigns the value from CSS.
+
+Please find below the differences:
+
+The ID is a kind of element which uniquely assigns a name to a particular element whereas class has an element with a certain set of properties that can be used for the complete block.
+The id can be used as an element because it can uniquely identify it whereas class is also defined to block the elements and applies too many tags wherever it is used.
+ID provides the restriction to use its properties to one specific element whereas in class the inheritance is applied to a specific block or group of the element.

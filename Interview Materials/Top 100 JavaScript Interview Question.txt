@@ -1,0 +1,814 @@
+1. What is JavaScript?
+
+JavaScript is a client-side and server-side scripting language inserted into HTML pages and is understood by web browsers. JavaScript is also an Object-based Programming language.
+
+JavaScript initially created as a browser only language, but now it can be executed on the server or any client which has a JavaScript Engine. The product like Node.js, MongoDB, jaggery.js, ASP and many more uses server-side JavaScript.
+
+- In the browser, JavaScript can do many things as given below:
+
+    - Manipulating the HTML element.
+    - 
+    - React to a user action, like running some event while user clicks on the mouse or by using the keyboard.
+    - 
+    - Send request to the remote server.
+    - 
+    - Downloading and uploading the files.
+    - 
+    - Get and Set cookies and handling the client-side storage (local and session storage).
+
+- Major Advantage of using the JavaScript
+
+    - Full integration with HTML/CSS .
+    - 
+    - Supported by all major browser which is enabled by default.
+
+
+
+2. What are the primitive types in JavaScript?
+        The data types supported by JavaScript are:
+
+        - String
+        - Number
+        - Boolean
+        - Symbol
+        - BigInt
+        - Null
+        - Undefined
+
+
+3. What's the difference between undefined and null in JavaScript?
+  -  undefined is the default value of
+
+        - a variable that has not been assigned a specific value.
+        - a function that has no explicit return value. for example
+    ex. console.log(12);
+
+        - a property that does not exist in an object. The JavaScript engine does this for us the assigning undefined values.
+  ex.
+        let _undefinedVar;
+         const doNothing = () => {};
+         const someObj = {
+           ab : “Tech Talks”,
+           bc : “With AK”,
+           cd : “Subscribe, Link in Bio”,
+         };
+    console.log(_undefinedVar); // undefined
+    console.log(doNothing()); // undefined
+    console.log(someObj[“d”]); // undefined
+
+- null is
+
+        - a value that represents no value.
+        - value that has been explicitly defined to a variable.
+        - Example we get a value of null when the fs.readFile method does not throw an error.
+
+ex.
+                fs.readFile('path/to/file', (err,data) => {
+             console.log(e); //prints null when no error occurred
+             if(e){
+               console.log(e);
+             }
+             console.log(data);
+           }
+        );
+
+- comparing null and undefined
+
+        - When comparing null and undefined we get true when using == and false when using ===.
+    console.log(null == undefined); // logs true
+    console.log(null === undefined); // logs false
+
+4. What are the features of JavaScript?
+        - JavaScript is a lightweight, interpreted programming language.
+        - JavaScript is designed for creating network-centric applications.
+        - JavaScript is complementary to and integrated with Java.
+        - JavaScript is complementary to and integrated with HTML.
+        - JavaScript is open and cross-platform.
+
+ 
+5. What are the advantages of JavaScript?
+
+        - Less server interaction? You can validate user input before sending the page off to the server.
+        - Immediate feedback to the visitors? They don’t have to wait for a page reload to see if they have forgotten to enter something.
+        - Increased interactivity? You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.
+
+6. Is javascript case-sensitive?
+        - Yes, JavaScript is a case-sensitive language. This means that language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.
+
+
+7. How can we create an object in JS?
+        var object = 
+                { 
+                 name: "obj",
+                 age: 10
+                 };
+
+8. How can we read the properties of an object in js?
+       - Can write and read properties of an object using the dot(.) notation.
+
+
+
+9. How to create an array in js and how to read array elements?
+      - Can you define arrays using the array literal as follows?
+       var x = [];
+       var y = [1, 2, 3, 4, 5];
+     -  An array has a length property that is useful for iteration. Can we read elements of an array as follows?
+       
+       for (var i = 0; i < x.length; i++)
+
+10. How many types of functions JS support?
+     -  A function in JavaScript can be either named or anonymous.
+
+
+11. How to define an anonymous function?
+    - An anonymous function can be defined in a similar way as a normal function but it would not have any name.
+
+
+12. Which built-in method calls a function for each element in the array?
+    - forEach method calls a function for each element in the array.
+
+13. Which type of variable among global and local, takes precedence over other if names are same?
+  - A local variable takes precedence over a global variable with the same name.
+
+14. Difference between “var” and “let” Keywords?
+    - Var was there from the beginning but the let was introduced in ES2015/ES6.
+    - Let has block scope and “Var” has function scope
+
+15. Difference between “==” and “===” ?
+    - ” ==” only compares values “===” compare values and type both.
+
+
+16. Difference between “undefine” and “NULL” Keywords?
+        - When you define a var but not assign any value. typeof(undefine)=> undefine
+        - Null- manually done. typeof(null)=> object
+
+
+17. What is prototypal Inheritance?
+        - Every object has a property called a prototype, where we can add methods to it and when you create another object from these the newly created object will automatically inherit its parent’s property.
+
+
+18. Which built-in method sorts the elements of an array?
+        - Sort method sorts the elements of an array.
+
+19. Which built-in method reverses the order of the elements of an array?
+        - Reverse method reverses the order of the elements of an array ?? the first becomes the last, and the last becomes the first.
+
+20. What is SetTimeout()?
+    - When you setTimeout it becomes asynchronous and it has to wait on the stack to get everything got finished
+
+
+21. How to add one new element at end of an array in javascript?
+    - Push method adds one or more elements to the end of an array and returns the new length of the array.
+
+
+22. What is closure and how do you use it?
+    - When a function returns the other function the returning function will hold its environment and this is known as closure.
+
+23. Output of below statements
+
+        <script>
+        document.write({});
+        </script>
+
+24. How can you move element in lowercase to uppercase from an array?
+    - toUpperCase method returns the calling string value converted to upper case.
+
+
+25. Enumerate the differences between Java and JavaScript?
+    - Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for different intent. Java is an object-oriented programming (OOPS) or structured programming languages like C++ or C, whereas JavaScript is a client-side scripting language.
+
+26. What is the use of isNaN function?
+
+    - isNan function returns true if the argument is not a number; otherwise, it is false.
+
+27. What is negative Infinity?
+
+    - Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.
+
+28. Is it possible to break JavaScript Code into several lines?
+
+        Breaking within a string statement can be done by using a backslash, ‘\,’ at the end of the first line.
+
+        Example:
+
+        document. Write ("This is \a program,");
+        And if you change to a new line when not within a string statement, then javaScript ignores the break in the line.
+
+        Example:
+
+        var x=1, y=2,
+        z=
+        x+y;
+        The above code is perfectly fine, though not advisable as it hampers debugging.
+
+29. Which company developed JavaScript?
+    - Netscape is the software company that developed JavaScript
+
+30. . What are undeclared and undefined variables?
+
+    - Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.
+                 - 
+    - Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.
+
+
+31. What are global variables? How are these variable declared?
+
+        Global variables are available throughout the length of the code so that it has no scope. The var keyword is used to declare a local variable or object. If the var keyword is omitted, a global variable is declared.
+
+        Example:
+
+        // Declare a global: globalVariable = “Test”;
+
+        The problems faced by using global variables are the clash of variable names of local and global scope. Also, it is difficult to debug and test the code that relies on global variables.
+
+32.  What is a prompt box?
+
+    - A prompt box is a box that allows the user to enter input by providing a text box. A label and box will be provided to enter the text or number.
+
+33. What is ‘this’ keyword in JavaScript?
+
+    - ‘This’ keyword refers to the object from where it was called.
+
+
+34. What is the working of timers in JavaScript?
+
+        Timers are used to execute a piece of code at a set time or repeat the code in a given interval. This is done by using the functions setTimeout, setInterval, and clearInterval.
+
+        The setTimeout(function, delay) function is used to start a timer that calls a particular function after the mentioned delay. The setInterval(function, delay) function repeatedly executes the given function in the mentioned delay and only halts when canceled. The clearInterval(id) function instructs the timer to stop.
+
+        Timers are operated within a single thread, and thus events might queue up, waiting to be executed.
+
+
+35.  Which symbol is used for comments in Javascript?
+
+        // for Single line comments and
+
+        /* Multi
+
+        Line
+
+        Comment
+
+        *
+
+36. What is the difference between ViewState and SessionState?
+        ‘ViewState’ is specific to a page in a session.
+        ‘SessionState’ is specific to user-specific data that can be accessed across all web application pages.
+
+37. What is === operator?
+
+        === is called a strict equality operator, which returns true when the two operands have the same value without conversion.
+
+
+38.  How you can submit a form using JavaScript?
+
+        To submit a form using JavaScript use
+
+        document.form[0].submit();
+        document.form[0].submit();
+
+39. Does JavaScript support automatic type conversion?
+
+    Yes, JavaScript does support automatic type conversion. It is the common way of type conversion used by JavaScript developers
+
+
+40. How can the style/class of an element be changed?
+
+    It can be done in the following way:
+
+    document.getElementById("myText"). style. fontSize = "20";
+    or
+
+    document. getElementById ("myText"). className = "anyclass";
+
+
+41.  How to read and write a file using JavaScript?
+
+        - There are two ways to read and write a file using JavaScript
+                 - 
+        - Using JavaScript extensions
+        - Using a web page and Active X objects
+42. What are all the looping structures in JavaScript?
+
+        Following are looping structures in Javascript:
+
+        For
+        While
+        Do-while loops
+
+
+43. What is called Variable typing in Javascript?
+
+        Variable typing is used to assign a number to a variable. The same variable can be assigned to a string.
+
+        Example:
+
+        i = 10;
+        i = "string;"
+        This is called variable typing.
+
+
+
+44. How can you convert the string of any base to an integer in JavaScript?
+
+        The parseInt() function is used to convert numbers between different bases. parseInt() takes the string to be converted as its first parameter. The second parameter is the base of the given string.
+
+        To convert 4F (or base 16) to integer, the code used will be –
+
+        parseInt ("4F", 16);
+
+45. Difference between “==” and “===”?
+
+        “==” checks only for equality in value, whereas “===” is a stricter equality test and returns false if either the value or the type of the two variables are different.
+
+
+        What would be the result of 3+2+”7″?
+        Since 3 and 2 are integers, they will be added numerically. And since 7 is a string, its concatenation will be done. So the result would be 57.
+
+46. How to detect the operating system on the client machine?
+
+        In order to detect the operating system on the client machine, the navigator. Platform string (property) should be used.
+
+47. What do you mean by NULL in Javascript?
+
+        The NULL value is used to represent no value or no object. It implies no object or null string, no valid boolean value, no number, and no array object.
+
+
+        What is the function of the delete operator?
+
+        The delete keyword is used to delete the property as well as its value.
+
+        Example
+
+        var student= {age:20, batch:"ABC"};
+        Delete student. age;
+
+48. What is an undefined value in JavaScript?
+
+        Undefined value means the
+
+        Variable used in the code doesn’t exist
+        Variable is not assigned to any value
+        Property does not exist.
+
+49. What are all the types of Pop up boxes available in JavaScript?
+
+        Alert
+        Confirm and
+        Prompt
+
+
+        . What is the use of Void (0)?
+
+        Void(0) is used to prevent the page from refreshing, and parameter “zero” is passed while calling.
+
+        Void(0) is used to call another method without refreshing the page.
+
+50. How can a page be forced to load another page in JavaScript?
+
+        The following code has to be inserted to achieve the desired effect:
+
+        <script language="JavaScript" type="text/javascript" >
+        <!-- location. href="http://newhost/newpath/newfile.html"; //--></script>
+
+51. What is the data type of variables in JavaScript?
+
+        All variables in JavaScript are object data types.
+
+
+
+        What is the difference between an alert box and a confirmation box?
+
+        An alert box displays only one button, which is the OK button.
+
+        But a Confirmation box displays two buttons, namely OK and cancel.
+
+52. What are escape characters?
+        Escape characters (Backslash) is used when working with special characters like single quotes, double quotes, apostrophes, and ampersands. Place backslash before the characters to make it display.
+
+        Example:
+
+        document. write "I m a "good" boy."
+        document. write "I m a \"good\" boy."
+
+
+        Does JavaScript has concept level scope?
+
+        No. JavaScript does not have concept-level scope. The variable declared inside the function has scope inside the function.
+
+        What are the disadvantages of using innerHTML in JavaScript?
+
+        If you use innerHTML in JavaScript, the disadvantage is
+
+        Content is replaced everywhere
+        We cannot use it like “appending to innerHTML
+        Even if you use +=like “innerHTML = innerHTML + ‘html'” still the old content is replaced by html
+        The entire innerHTML content is re-parsed and builds into elements. Therefore, it’s much slower
+        The innerHTML does not provide validation, and therefore we can potentially insert valid and broken HTML in the document and break it
+
+53. What is break and continue statements?
+
+        Break statement exits from the current loop.
+
+        Continue statement continues with next statement of the loop.
+
+
+        What are the two basic groups of data types in JavaScript?
+
+        They are as—Primitive
+        Reference types
+        Primitive types are number and Boolean data types. Reference types are more complex types like strings and dates.
+
+54. How can generic objects be created?
+
+        Generic objects can be created as:
+
+        var I = new object();
+
+
+        What is the use of a type of operator?
+
+        ‘Typeof’ is an operator used to return a string description of the type of a variable.
+
+55. Which keywords are used to handle exceptions?
+
+        Try… Catch—finally is used to handle exceptions in the JavaScript
+
+        Try{
+            Code
+        }
+        Catch(exp){
+            Code to throw an exception.
+        }
+        Finally{
+            Code runs either it finishes successfully or after catch
+        }
+
+
+56. Which keyword is used to print the text on the screen?
+
+        Document. Write (“Welcome”) is used to print the text–Welcome on the screen.
+
+57. What is the use of the blur function?
+
+        Blur function is used to remove the focus from the specified object.
+
+58. What is variable typing?
+
+        Variable typing assigns a number to a variable and then assigns a string to the same variable. An example is as follows:
+
+        i= 8;
+        i="john";
+
+
+
+        How to find an operating system in the client machine using JavaScript?
+
+        The ‘Navigator. the app version is used to find the operating system’s name in the client machine.
+
+60. What are the different types of errors in JavaScript?
+
+        There are three types of errors:
+
+        Load time errors: Errors that come up when loading a web page, like improper syntax errors, are known as Load time errors and generate the errors dynamically.
+        Runtime errors: Errors that come due to misuse of the command inside the HTML language.
+        Logical Errors: These are the errors that occur due to the bad logic performed on a function with a different operation.
+
+
+        What is the use of the Push method in JavaScript?
+
+        The push method is used to add or append one or more elements to an Array end. Using this method, we can append multiple elements by passing multiple arguments.
+
+61. What is the unshift method in JavaScript?
+
+        Unshift method is like the push method, which works at the beginning of the array. This method is used to prepend one or more elements to the beginning of the array.
+
+62. What is the difference between JavaScript and Jscript?
+
+        Both are almost similar. Netscape and Jscript develop JavaScript was developed by Microsoft.
+
+
+        How are object properties assigned?
+
+        Properties are assigned to objects in the following way –
+
+        obj ["class"] = 12;
+        or
+        obj.class = 12;
+
+63. What is the ‘Strict Mode in JavaScript, and how can it be enabled?
+
+        Strict Mode adds certain compulsions to JavaScript. Under the strict Mode, JavaScript shows errors for a piece of code, which did not show an error before, but might be problematic and potentially unsafe. Strict Mode also solves some mistakes that hamper the JavaScript engines from working efficiently.
+
+        Strict mode can be enabled by adding the string literal “use strict” above the file. This can be illustrated by the given example:
+
+        function myfunction() {
+            "use strict;"
+            var v = "This is a strict mode function";
+        }
+
+
+
+64. What is the way to get the status of a CheckBox?
+
+        The status can be acquired as follows –
+
+         alert(document.getElementById('checkbox1').checked); 
+        If the CheckBox is checked, this alert will return TRUE.
+
+65. What is a window.onload and onDocumentReady?
+
+    The onload function is not run until all the information on the page is loaded. This leads to a substantial delay before any code is executed.
+
+    onDocumentReady loads the code just after the DOM is loaded. This allows early manipulation of the code.
+
+
+66. How can a value be appended to an array?
+
+        A value can be appended to an array in the given manner –
+
+ 
+        arr[arr.length] = value; 
+67. What is for-in loop in Javascript?
+
+        The for-in loop is used to loop through the properties of an object.
+
+        The syntax for the for-in loop is –
+
+        for (variable name in object){
+            statement or block to execute
+        }
+
+        In each repetition, one property from the object is associated with the variable name. The loop is continued till all the properties of the object are depleted.
+
+
+
+
+68. What are the important properties of an anonymous function in JavaScript?
+
+        A function that is declared without any named identifier is known as an anonymous function. In general, an anonymous function is inaccessible after its declaration.
+
+        Anonymous function declaration –
+
+        var anon = function() {
+            alert('I am anonymous');
+        };
+        anon();
+
+
+69. Is JavaScript case sensitive? Give its example.
+
+        Yes, JavaScript is case-sensitive. For example, a function parseInt is not the same as the function Parseint.
+
+
+70. What boolean operators can be used in JavaScript?
+
+        The ‘And’ Operator (&&), ‘Or’ Operator (||), and the ‘Not’ Operator (!) can be used in JavaScript.
+
+        *Operators are without the parenthesis.
+
+71. How can a particular frame be targeted, from a hyperlink, in JavaScript?
+
+        This can be done by including the name of the required frame in the hyperlink using the ‘target’ attribute.
+
+        <a href="/newpage.htm" target="newframe">>New Page</a>
+
+
+72. What is the role of break and continue statements?
+
+        The break statement is used to come out of the current loop. In contrast, the continue statement continues the current loop with a new recurrence.
+
+
+73. What are the various functional components in JavaScript?
+
+        The different functional components in JavaScript are-
+
+        First-class functions: Functions in JavaScript are utilized as first-class objects. This usually means that these functions can be passed as arguments to other functions, returned as values from other functions, assigned to variables, or can also be stored in data structures.
+        Nested functions: The functions, which are defined inside other functions, are called Nested functions.
+        They are called 'every time the main function is invoked'.
+
+
+74. Write about the errors shown in JavaScript?
+
+        JavaScript gives a message as if it encounters an error. The recognized errors are –
+
+        Load-time errors: The errors shown at the time of the page loading are counted under Load-time errors. The use of improper syntax encounters these errors and is thus detected while the page is getting loaded.
+        Runtime errors: This is the error that comes up while the program is running. For example, illegal operations cause the division of a number by zero or access a non-existent area of the memory.
+        Logic errors: It is caused by syntactically correct code, which does not fulfill the required task—for example, an infinite loop.
+
+
+
+75. Why you should not use innerHTML in JavaScript?
+
+        innerHTML content is refreshed every time and thus is slower. There is no scope for validation in innerHTML. Therefore, it is easier to insert rogue code in the document and make the web page unstable.
+
+76. What does the following statement declare?
+
+        var myArray = [[[]]];
+        It declares a three-dimensional array.
+
+77. How are JavaScript and ECMA Script related?
+
+        ECMA Script is like rules and guidelines, while Javascript is a scripting language used for web development.
+
+78. What is namespacing in JavaScript, and how is it used?
+
+    Namespacing is used for grouping the desired functions, variables, etc., under a unique name. It is a name that has been attached to the desired functions, objects, and properties. This improves modularity in the coding and enables code reuse
+
+
+79. How to use Loop in JavaScript?
+
+        Loops are useful when you repeatedly execute the same lines of code a specific number of times or as long as a specific condition is true. Suppose you want to type a ‘Hello’ message 100 times on your webpage. Of course, you will have to copy and paste the same line 100 times. Instead, if you use loops, you can complete this task in just 3 or 4 lines.
+
+80. How to use Loops in Javascript?
+
+        There are mainly four types of loops in JavaScript.
+
+        for loop
+
+        for/in a loop (explained later)
+
+        while loop
+
+        do…while loop
+
+
+81. What are the important JavaScript Array Method explain with example?
+
+    JavaScript Array Methods
+    The Array object has many properties and methods which help developers to handle arrays easily and efficiently. You can get the value of a property by specifying arrayname.property and the output of a method by specifying arrayname.method().
+
+        - length property –> If you want to know the number of elements in an array, you can use the length property.
+        - 
+        - prototype property –> If you want to add new properties and methods, you can use the prototype property.
+        - 
+        - reverse method –> You can reverse the order of items in an array using a reverse method.
+        - 
+        - sort method –> You can sort the items in an array using sort method.
+        - 
+        - pop method –> You can remove the last item of an array using a pop method.
+        - 
+        - shift method –> You can remove the first item of an array using shift method.
+        - 
+        - push method –> You can add a value as the last item of the array.
+        - 
+
+82. What is DOM in JavaScript?
+
+    JavaScript can access all the elements in a web page using the Document Object Model (DOM). The web browser creates a DOM of the webpage when the page is loaded
+
+
+83. How to use DOM and Events?
+
+    Using DOM, JavaScript can perform multiple tasks. It can create new elements and attributes, change the existing elements and attributes and even remove existing elements and attributes. JavaScript can also react to existing events and create new events in the page.
+
+    getElementById, innerHTML Example
+    getElementById: To access elements and attributes whose id is set.
+    innerHTML: To access the content of an element.
+    getElementsByTagName Example
+    getElementsByTagName: To access elements and attributes using tag name. This method will return an array of all the items with the same tag name.
+
+
+84. What is External JavaScript?
+
+        You plan to display the current date and time on all your web pages. Suppose you wrote the code and copied it in to all your web pages (say 100). But later, you want to change the format in which the date or time is displayed. In this case, you will have to make changes to all the 100 web pages. This will be a very time-consuming and difficult task.
+
+        So, save the JavaScript code in a new file with the extension .js. Then, add a line of code in all your web pages to point to your .js file like this:
+
+        <script type="text/javascript," src="/currentdetails.js,">
+        Note: It is assumed that the .js file and all your web pages are in the same folder. If the external.js file is in a different folder, you need to specify your file’s full path in the src attribute.
+
+85. When to Use Internal and External JavaScript Code?
+
+        Suppose you have only a few lines of code that is specific to a particular webpage. In that case, it is better to keep your JavaScript code internal within your HTML document.
+
+        On the other hand, if your JavaScript code is used in many web pages, you should consider keeping your code in a separate file. If you wish to make some changes to your code, you have to change only one file, making code maintenance easy. If your code is too long, it is better to keep it in a separate file. This helps in easy debugging.
+
+
+86. What is Callback?
+        A callback is a plain JavaScript function passed to some method as an argument or option. It is a function that is to be executed after another function has finished executing, hence the name 'call back'. In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions.
+
+87. What is Closure? Give an example.
+        Closures are created whenever a variable that is defined outside the current scope is accessed from within some inner scope. It gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created. To use a closure, simply define a function inside another function and expose it
+
+
+88. Name some of the built-in methods and the values returned by them.
+    Built-in Method	Values
+        -   CharAt()	It returns the character at the specified index.
+        -   Concat()	It joins two or more strings.
+        -   forEach()	It calls a function for each element in the array.
+        -   indexOf()	It returns the index within the calling String object of the first occurrence of the specified value.
+        -   length()	It returns the length of the string.
+        -   pop()	It removes the last element from an array and returns that element.
+        -   push()	It adds one or more elements to the end of an array and returns the new length of the array.
+        -   reverse()	It reverses the order of the elements of an array.
+            -   
+
+89. What are the variable naming conventions in JavaScript?
+        The following rules are to be followed while naming variables in JavaScript:
+
+        You should not use any of the JavaScript reserved keyword as variable name. For example, break or boolean variable names are not valid.
+        JavaScript variable names should not start with a numeral (0-9). They must begin with a letter or the underscore character. For example, 123name is an invalid variable name but _123name or name123 is a valid one.
+        JavaScript variable names are case sensitive. For example, Test and test are two different variables.
+
+90. What is the difference between Attributes and Property?
+        Attributes-  provide more details on an element like id, type, value etc.
+
+        Property-  is the value assigned to the property like type=”text”, value=’Name’ etc
+
+
+91. List out the different ways an HTML element can be accessed in a JavaScript code.
+    Here are the list of ways an HTML element can be accessed in a Javascript code:
+        (i) getElementById(‘idname’): Gets an element by its ID name
+        (ii) getElementsByClass(‘classname’): Gets all the elements that have the given classname.
+        (iii) getElementsByTagName(‘tagname’): Gets all the elements that have the given tag name.
+        (iv) querySelector(): This function takes css style selector and returns the first selected element.
+
+
+92. In how many ways a JavaScript code can be involved in an HTML file?
+        There are 3 different ways in which a JavaScript code can be involved in an HTML file:
+
+        Inline
+        Internal
+        External
+
+93. What are the ways to define a variable in JavaScript?
+    The three possible ways of defining a variable in JavaScript are:
+
+        - Var – The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable. Example: var a =10; Variable declarations are processed before the execution of the code.
+        - Const – The idea of const functions is not allow them to modify the object on which they are called. When a function is declared as const, it can be called on any type of object.
+        - Let – It is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in.
+
+
+
+94. What is a Typed language?
+        Typed Language is in which the values are associated with values and not with variables. It is of two types:
+
+        Dynamically: in this, the variable can hold multiple types; like in JS a variable can take number, chars.
+        Statically: in this, the variable can hold only one type, like in Java a variable declared of string can take only set of characters and nothing else.
+
+
+95. What is the difference between the operators ‘==‘ & ‘===‘?
+        The main difference between “==” and “===” operator is that formerly compares variable by making type correction e.g. if you compare a number with a string with numeric literal, == allows that, but === doesn’t allow that, because it not only checks the value but also type of two variable, if two variables are not of the same type “===” return false, while “==” return true.
+
+96. What is the difference between null & undefined?
+        Undefined means a variable has been declared but has not yet been assigned a value. On the other hand, null is an assignment value. It can be assigned to a variable as a representation of no value. Also, undefined and null are two distinct types: undefined is a type itself (undefined) while null is an object
+
+
+97. What is the difference between undeclared & undefined?
+        Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered. Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.
+
+
+
+98. What is the difference between window & document in JavaScript?
+        Window	Document
+        JavaScript window is a global object which holds variables, functions, history, location.	The document also comes under the window and can be considered as the property of the window.
+
+
+99. What is the difference between innerHTML & innerText?
+        innerHTML – It will process an HTML tag if found in a string
+
+        innerText – It will not process an HTML tag if found in a string
+
+
+100. What is NaN in JavaScript?
+        NaN is a short form of Not a Number. Since NaN always compares unequal to any number, including NaN, it is usually used to indicate an error condition for a function that should return a valid number. When a string or something else is being converted into a number and that cannot be done, then we get to see NaN.
+
+
+101. How do JavaScript primitive/object types passed in functions?
+        One of the differences between the two is that Primitive Data Types are passed By Value and Objects are passed By Reference.
+
+      -   By Value means creating a COPY of the original. Picture it like twins: they are born exactly the same, but the first twin doesn't lose a leg when the second twin loses his in the war.
+      -   By Reference means creating an ALIAS to the original. When your Mom calls you “Pumpkin Pie” although your name is Margaret, this doesn't suddenly give birth to a clone of yourself: you are still one, but you can be called by these two very different names.
+
+
+ 102. What are Exports & Imports?
+     Imports and exports help us to write modular JavaScript code. Using Imports and exports we can split our code into multiple files. 
+     For example-
+ 
+        //------ lib.js ------</span>
+        export const sqrt = Math.sqrt;</span>
+        export function square(x) {</span>
+        return x * x;</span>
+        }
+        export function diag(x, y) {
+        return sqrt(square(x) + square(y));
+        }
+        
+        //------ main.js ------</span>
+        { square, diag } from 'lib';
+        console.log(square(5)); // 25
+        console.log(diag(4, 3)); // 5
+
+
+
+
+
+
+
+ https://www.edureka.co/blog/interview-questions/javascript-interview-questions/
+
+ https://www.dotnettricks.com/learn/javascript/javascript-interview-questions
+
+
+ https://dev.to/letstechtalks/100-most-asked-javascript-interview-questions-and-answers-part-1-443o
