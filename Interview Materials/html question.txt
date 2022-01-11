@@ -1,0 +1,348 @@
+1. what is a head tag and what can be added in it?
+
+The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+
+The following elements can go inside the <head> element:
+
+<title> (required in every HTML document)
+<style>
+<base>
+<link>
+<meta>
+<script>
+<noscript>
+
+The <head> tag contains metadata (document title, character set, styles, links, scripts), specific information about the web page that is not displayed to the user. Metadata provides browsers and search engines with technical information about the web page.
+
+
+The <head> includes the following elements:
+
+The <title> tag defines the title of a web page (required). It may be confused with the <h1> tag, but they are different. The <h1> tag specifies the title of page content, whereas the <title> tag is metadata representing the title of the entire HTML content and not its content.
+The <style> tag contains CSS code that defines how HTML elements should be rendered in a browser.
+The <base> tag defines an absolute (base) URL for all relative URLs.
+The <link> tag defines the relationship between the current HTML document and the resource to which it refers, or contains a link to an external style sheet. It can have two attributes: rel="stylesheet" and href.
+The <meta> tag provides additional information (metadata) about HTML document. The <head> of a page can include different kinds of <meta> elements that may contain name and content attributes.
+The <script> tag contains a script (generally JavaScript), or reference to an external file with scripts.This element may not be included in <head>. Sometimes, it is better to put it at the bottom of <body>. The <script> element may seem empty, but it's not.
+The <noscript> tag defines an alternate text, which is displayed, if the browser doesn’t support scripts or scripts are disabled by the user.
+
+
+
+Q2. what is viewport?
+
+A viewport is a term for the visible area of a webpage on a display device. It is used in both code and analog design as a way to refer to the display screen and how layout fits into that screen.
+
+
+The viewport is the part of the webpage that the user can currently see. The scrollbars move the viewport to show other parts of the page.
+
+
+if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth,
+      viewportheight = window.innerHeight
+ }
+
+
+ The viewport is the user's visible area of a web page.
+
+The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+
+Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.
+
+Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.
+
+This was not perfect!! But a quick fix.
+
+
+HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
+
+You should include the following <meta> viewport element in all your web pages:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This gives the browser instructions on how to control the page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets
+
+
+
+
+the initial zoom level when the page is first loaded by the browser.
+
+
+Q 3. what is class and id in html ?
+
+
+
+Q4. meta-data and meta ?
+
+HTML lets you specify metadata - additional important information about a document in a variety of ways. The META elements can be used to include name/value pairs describing properties of the HTML document, such as author, expiry date, a list of keywords, document author etc.
+
+The <meta> tag is used to provide such additional information. This tag is an empty element and so does not have a closing tag but it carries information within its attributes.
+
+You can include one or more meta tags in your document based on what information you want to keep in your document but in general, meta tags do not impact physical appearance of the document so from appearance point of view, it does not matter if you include them or not.
+
+<meta name = "keywords" content = "HTML, Meta Tags, Metadata" />
+
+
+
+
+
+
+
+Q5. JavaScript's Lambda and Arrow Functions?
+
+
+Lambda expressions are present in most of modern programming languages (Python, Ruby, Java...). They are simply expressions that create functions. This is really important for a programming language to support first-class functions which basically means passing functions as arguments to other functions or assigning them to variables.
+
+In JavaScript pre-ES6 we have function expressions which give us an anonymous function (a function without a name).
+
+var anon = function (a, b) { return a + b };
+
+
+In ES6 we have arrow functions with a more flexible syntax that has some bonus features and gotchas.
+
+// we could write the above example as:
+var anon = (a, b) => a + b;
+// or
+var anon = (a, b) => { return a + b };
+// if we only have one parameter we can loose the parentheses
+var anon = a => a;
+// and without parameters
+var () => {} // noop
+
+// this looks pretty nice when you change something like:
+[1,2,3,4].filter(function (value) {return value % 2 === 0});
+// to:
+[1,2,3,4].filter(value => value % 2 === 0);
+
+
+One of the major advantages of arrow functions is that it does not have it's own this value. It's this is lexically bound to the enclosing scope. This mean we can kiss goodbye to this horrible pattern:
+
+class Logger {
+  dumpData(data) {
+    var _this = this;
+
+    // this dumps data to a file and get the name of the file via a callback
+    dump(data, function (outputFile) {
+      _this.latestLog = outputFile;
+    });
+  }
+}
+// using arrow functions
+class Logger {
+  dumpData(data) {
+    dump(data, outputFile => this.latestLog = outputFile);
+  }
+}
+
+
+However there are some gotchas you should be aware of:
+
+This should be pretty obvious, but because this is lexically bound you can't change it; call() and apply() will not be able to provide another value for this.
+There is no arguments variable:
+
+(function () {console.log(arguments)})(1, 2); // will output [1, 2]
+
+(() => console.log(arguments))(1, 2); // will raise ReferenceError: arguments is not defined
+
+
+
+Be careful when returning object literals
+(() => {foo: 1})() // this will return undefined. 'foo: 1' is interpreted as a statement composed of a label and the literal 1
+
+// the correct way should be wrapping it with parenthesis
+(() => ({foo: 1}))() // returns Object {foo: 1}
+Remember this is all ES6 and not supported by all browsers but you can always use Babel.
+
+
+
+Q7. What is caching?
+
+
+Cache is a type of memory that is used to increase the speed of data access. Normally, the data required for any process resides in the main memory. However, it is transferred to the cache memory temporarily if it is used frequently enough. The process of storing and accessing data from a cache is known as caching.
+
+
+Q8. difference between relative and absolute
+
+
+1. Relative is always in proportion to a whole. Absolute is the total of all existence.
+2. Relative is dependent while absolute is independent.
+3. Absolute is capable of being thought of or conceived by itself alone.
+
+
+Relative Position: Setting the top, right, bottom, and left properties of an element with position: relative; property will cause it to adjust from its normal position. The other objects or elements will not fill the gap.
+
+
+Absolute Position: An element with position: absolute; will cause it to adjust its position with respect to its parent. If no parent is present, then it uses the document body as parent.
+
+
+
+Fixed Position:
+
+
+
+Position: fixed; property applied to an element will cause it to always stay in the same place even if the page is scrolled. To position the element we use top, right, bottom, left properties.
+
+
+
+
+Q9. difference between display inline and block. 
+
+
+inline
+Displays an element as an inline element. Any height and width properties will have no effect.
+
+
+inline elements
+Here are a few elements that have a default inline property:
+
+span
+a
+img
+And most of the formatting tags are also are inherently inline:
+
+em
+strong
+i
+small
+
+
+
+inline-block
+Displays an element as an inline-level block container. You CAN set height and width values.
+
+
+Alright, let's move on to inline-block. It’s essentially the same thing as inline, except that you can set height and width values.
+
+
+block
+Check the length of the string
+
+
+
+
+So far, we talked about inline. Now let's switched to the opposite of it, block. Remember inline elements appears on the same line. Well, block starts on a NEW line and takes up the full width available. So that means block elements will occupy the entire width of its parent element.
+
+
+
+
+block elements
+Here are a few elements that have a default block property:
+
+div
+h1
+p
+li
+section
+
+
+
+
+inline The element doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height.
+
+inline-block It’s formatted just like the inline element, where it doesn’t start on a new line. BUT, you can set width and height values.
+
+block The element will start on a new line and occupy the full width available. And you can set width and height values.
+
+
+
+
+Q10. Difference between call,apply and bind
+
+Apply()
+apply(this [, [arg1, arg2,...]]): Calls a function with a provided this value. Further arguments are provided as a single array.
+
+Way to remember: “Apply accepts arguments as an Array” or “AA”
+
+Call()
+call(this [, arg1, arg2...]): Calls a function with a provided this. Further arguments are provided as a comma separated list
+
+Ways to remember: “Call’s arguments are separated by commas” or “CC”.
+
+Bind()
+bind(this): Returns a new function whose this value is bound to the provided value.
+
+Ways to remember: bind() is the only method out of the three that returns a new function altogether. It does not call the function.
+
+
+
+
+Call( ): The call() method invokes a function with a given 'this' value and arguments provided one by one. This means that we can call any function, and explicitly specify what 'this' should reference within the calling function.
+
+
+
+Apply( ): Invokes the function and allows you to pass in arguments as an array.
+
+
+Bind(): returns a new function, allowing you to pass in an array and any number of arguments.
+
+
+
+
+Q11. what is priority of css in case of class and id
+
+
+
+Specificity Hierarchy :Every element selector has a position in the Hierarchy. 
+
+Inline style: Inline style has highest priority. 
+ 
+Identifiers(ID): ID have the second highest priority. 
+ 
+Classes, pseudo-classes and attributes: Classes, pseudo-classes and attributes are come next. 
+ 
+Elements and pseudo-elements: Elements and pseudo-elements have lowest priority. 
+
+
+
+
+Q12. What are Pseudo-classes?
+
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+
+a.highlight:hover {
+    color: #ff0000;
+  }
+
+
+  div:hover {
+    background-color: blue;
+  }
+
+  Q13. What are Pseudo-Elements?
+  A CSS pseudo-element is used to style specified parts of an element.
+  
+  For example, it can be used to:
+  
+  Style the first letter, or line, of an element
+  Insert content before, or after, the content of an element
+  p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+  }
+  Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+  
+
+
+
